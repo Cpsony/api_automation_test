@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -73,7 +73,6 @@ ALLOWED_HOSTS = ['192.168.89.198', '127.0.0.1', '192.168.88.131',
 
 AUTH_PROFILE_MODULE = 'djangoadmin.api_test.UserProfile'
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -102,7 +101,6 @@ SWAGGER_SETTINGS = {
 
 LOGIN_URL = 'rest_framework:login'
 LOGOUT_URL = 'rest_framework:logout'
-
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
@@ -156,7 +154,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api_automation_test.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -165,9 +162,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'api_test',
         'USER': 'root',
-        'PASSWORD': 'lt19910301',
+        'PASSWORD': 'cpsony96',
         # 'HOST': '120.79.232.23',
-        'HOST': '172.18.162.26',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
@@ -196,7 +193,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
